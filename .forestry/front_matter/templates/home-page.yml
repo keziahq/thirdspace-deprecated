@@ -1,0 +1,47 @@
+---
+label: Home Page
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: site_title
+  label: Site title
+  description: Site title
+  config:
+    required: true
+  default: Third Space
+- type: textarea
+  name: what_are_you__who_are_you_
+  label: What are you? Who are you?
+  description: company description
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  default: "<p>Expert perspective on designing <br>communities for business growth.</p>"
+- type: list
+  name: navi_bar
+  label: Navi Bar
+  description: Navi Bar
+  config:
+    min: '1'
+    max: '6'
+  default:
+  - Home
+  - Community for Business ROI
+  - Expert Blog
+  - Events
+  - Community Format Matcher
+  - Contact
+- type: file
+  name: feature_image
+  label: feature image home page
+  description: feature image
+  config:
+    maxSize: '250'
+- type: file
+  name: newsletter_signup_button
+  label: newsletter signup button
+  description: signup newsletter
+  config:
+    maxSize: '250'
