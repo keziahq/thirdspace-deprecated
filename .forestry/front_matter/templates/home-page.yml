@@ -72,3 +72,5 @@ fields:
       wysiwyg: true
       schema:
         format: html-blocks
+pages:
+- Homepage.md
