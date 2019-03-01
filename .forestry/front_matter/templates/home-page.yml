@@ -19,6 +19,12 @@ fields:
     schema:
       format: html-blocks
   default: "<p>Expert perspective on designing <br>communities for business growth.</p>"
+- type: file
+  name: newsletter_signup_button
+  label: newsletter signup button
+  description: signup newsletter
+  config:
+    maxSize: '250'
 - type: list
   name: navi_bar
   label: Navi Bar
@@ -39,9 +45,30 @@ fields:
   description: feature image
   config:
     maxSize: '250'
-- type: file
-  name: newsletter_signup_button
-  label: newsletter signup button
-  description: signup newsletter
-  config:
-    maxSize: '250'
+- type: field_group
+  name: featured_articles
+  label: featured articles
+  description: Featured Stories
+  fields:
+  - type: text
+    name: story_1
+    label: Story 1
+    description: Story 1
+  - type: textarea
+    name: story_1_description
+    label: Story 1 description
+    description: Story 1 description
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - type: text
+    name: story_2
+    label: Story 2
+  - type: textarea
+    name: story_2_description
+    label: Story 2 description
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
